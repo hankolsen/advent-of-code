@@ -18,7 +18,7 @@ const main = (args = process.argv, program = new Command()) => {
 
   program
     .command('init <day>')
-    .description('Initalize a given day')
+    .description('Initialize a given day')
     .option(
       '-n, --name-template [template',
       'The template filename',
@@ -30,6 +30,7 @@ const main = (args = process.argv, program = new Command()) => {
       defaultTemplateFile,
     )
     .action((day, command) => {
+      console.log(day, command);
       action = init();
     });
 

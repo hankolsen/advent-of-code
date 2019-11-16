@@ -1,4 +1,5 @@
-const init = config => {
+const init = (config) => {
+  console.log(config);
   return Promise.all([]);
 };
 
